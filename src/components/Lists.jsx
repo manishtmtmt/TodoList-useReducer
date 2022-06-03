@@ -6,13 +6,11 @@ const Lists = () => {
   const { todos } = useContext(TodoContext);
   console.log(todos)
   return (
-    <div>
+    <ul>
       {todos.map((data) => (
-        <div key={data.id}>
-          <ListItem data={data} />
-        </div>
+        <ListItem data={data} />
       ))}
-    </div>
+    </ul>
   );
 };
 
